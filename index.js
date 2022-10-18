@@ -186,7 +186,7 @@ let setEndHour = $("#Endhour").val();
     },1000)
 
 function play(){
-      let audio = new Audio('assets/clock.mp3');
+      let audio = new Audio('./assets/clock.mp3');
       audio.play();
       audio.loop = true;
       $("#stopButton").removeClass("is-disable")
