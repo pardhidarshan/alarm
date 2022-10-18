@@ -1,8 +1,6 @@
 body {
-    background-color: #2C3639;
-    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
-}
-
+    background-color: #0c003d;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");}
 h1 {
     color: #DCD7C9;
     text-align: center;
@@ -14,21 +12,22 @@ h2 {
 }
 
 .div1 {
-    background-color: #3F4E4F;
+    
     padding:0 0 15px 0;
     margin: 5px;
     border-radius: 25px ;
 }
 
 .div2 {
-    background-color: #3F4E4F;
+    
     padding:0 0 15px 0;
     margin: 5px;
     border-radius: 25px ;
 }
 
 .title {
-    background-color: #628E90;
+    background-color: #0c003d;
+    border:solid 2px #2302a4;
     margin: 15px;
     color: #DCD7C9;
     padding: 5px;
@@ -36,7 +35,8 @@ h2 {
 }
 
 .alarm-display {
-    background-color: #425F57;
+    background-color: #090949;
+    border:solid 2px #2302a4;
     margin: 15px auto;
     color: #DCD7C9;
     padding: 5px;
@@ -45,16 +45,27 @@ h2 {
 }
 
 .counters {
-    padding-top: 30px;
+    padding: 30px 0 30px 0 ;
+    background-color: #2e048f;
+    border:solid 2px #1c047b;
+    border-radius: 25px ;
+    margin: 0 15px 0 15px;
 }
 
 .sumit-button {
-    padding-top: 20px;
+ 
+    margin:15px ;
 }
 
 .btn-counter {
     width: 1cm;
     border-radius: 50%;
+    background-color: #2e048f;
+    border: solid 1px rgb(219, 216, 216);
+}
+.btn-counter:hover{
+    background-color: #2a3bd3;
+    
 }
 
 .is-disable {
@@ -69,6 +80,8 @@ h2 {
     width: max-content;
     margin: auto;
     border-radius: 25px;
+    font-size: 30px;
+    
 }
 
 .is-error {
@@ -105,6 +118,16 @@ input::-webkit-inner-spin-button {
     
 }
 
+
+.button-style{
+    color: #DCD7C9;
+    border:solid 2px #2302a4;
+}
+
+.button-style:hover{
+    background-color: #090949;
+    border:solid 2px #3504fd;
+}
 #stopButton {
     width: 300px;
     position: absolute;

@@ -13,6 +13,7 @@
 
 
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="./assets/favicon.ico">
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -31,65 +32,71 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="div1 col-lg-5  text-center">
-                <div class="title  text-center">
+                <div class="title  text-center shadow" >
                     <h2>Start</h2>
                 </div>
-                <div class="row counters">
-                    <div class="col-lg-6   text-center">
+                <div class="counters d-flex justify-content-around shadow">
+                    <div class=" text-center ">
                         <button type="button" class="btn btn-secondary btn-counter" id="Starthouradd">+</button>
                         <input type="number" class="form-control form-control-lg input-format" id="starthour"
                             placeholder="00" max="23" min="0">
                         <button type="button" class="btn btn-secondary btn-counter" id="Starthoursub">-</button>
                     </div>
-                    <div class="col-lg-6  text-center">
+                    <div class=" text-center ">
                         <button type="button" class="btn btn-secondary btn-counter" id="Startminadd">+</button>
                         <input type="number" class="form-control form-control-lg input-format" id="Startmin"
                             placeholder="00" max="59" min="0" step="5">
                         <button type="button" class="btn btn-secondary btn-counter" id="Startminsub">-</button>
                     </div>
                 </div>
+
+                <div class=" sumit-button text-center shadow">
+                    <div class="alarm-display text-center">
+                        <h2 id="alarmCreate">--:--</h2>
+                    </div>
+                            <button type="button" class="btn btn-outline-primary btn-lg mt-3 button-style" id="Setbutton">Set Alarm</button>
+                        </div>
                 
             </div>
 
+
             <div class="div2 col-lg-5  ">
-                <div class="title   text-center">
-                    <h2>AlarmGoal</h2>
+                <div class="title   text-center shadow">
+                    <h2>Alarm Goal</h2>
                 </div>
 
-                <div class="row counters">
-                    <div class="col-lg-6  text-center">
+                <div class="counters d-flex justify-content-around shadow">
+                    <div class=" text-center">
                         <button type="button" class="btn btn-secondary btn-counter" id="Endhouradd">+</button>
                         <input type="number" class="form-control form-control-lg input-format" id="Endhour"
                             placeholder="00" max="23" min="0">
                         <button type="button" class="btn btn-secondary btn-counter" id="Endhoursub">-</button>
                     </div>
-                    <div class="col-lg-6  text-center">
+                    <div class=" text-center">
                         <button type="button" class="btn btn-secondary btn-counter" id="Endminadd">+</button>
                         <input type="number" class="form-control form-control-lg input-format" id="Endmin"
                             placeholder="00" max="59" min="0" step="5">
                         <button type="button" class="btn btn-secondary btn-counter" id="Endminsub">-</button>
                     </div>
+
                 </div>
+
+                    
+            <div class="sumit-button text-center shadow">
+                <div class="alarm-display  text-center">
+                    <h2 id="alarmStop">--:--</h2>
+                </div>
+                <button type="button" class="btn btn-outline-primary btn-lg mt-3 button-style" id="SetbuttonGoal">Alarm Goal</button>
+                    
+            </div>
                 
             </div>
 
             
                 
-            <div class="col-lg-5 sumit-button text-center">
-                <div class="alarm-display text-center">
-                    <h2 id="alarmCreate">--:--</h2>
-                </div>
-                        <button type="button" class="btn btn-outline-info btn-lg" id="Setbutton">Set Alarm</button>
-                    </div>
+            
                 
-                
-            <div class="col-lg-5 sumit-button text-center">
-                <div class="alarm-display  text-center">
-                    <h2 id="alarmStop">--:--</h2>
-                </div>
-                        <button type="button" class="btn btn-outline-info btn-lg" id="SetbuttonGoal">AlarmGoal</button>
-                    
-            </div>
+            
             
         </div>
 

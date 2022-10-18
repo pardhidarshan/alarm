@@ -6,6 +6,9 @@ $("#Starthouradd").click(function(){
   if(starthouradd < 23){
     starthouradd++;
   }
+  if (starthouradd>=23){
+    starthouradd =0;
+  }
   $("#starthour").val(starthouradd)
 });
 
@@ -52,6 +55,9 @@ let endhour = 00;
 $("#Endhouradd").click(function(){
   if(endhour<23){
     endhour++;
+  }
+  if(endhour>=23){
+    endhour = 0;
   }
  $("#Endhour").val(endhour)
 });
