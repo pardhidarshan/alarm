@@ -1,0 +1,115 @@
+body {
+    background-color: #2C3639;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+}
+
+h1 {
+    color: #DCD7C9;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+.div1 {
+    background-color: #3F4E4F;
+    padding:0 0 15px 0;
+    margin: 5px;
+    border-radius: 25px ;
+}
+
+.div2 {
+    background-color: #3F4E4F;
+    padding:0 0 15px 0;
+    margin: 5px;
+    border-radius: 25px ;
+}
+
+.title {
+    background-color: #628E90;
+    margin: 15px;
+    color: #DCD7C9;
+    padding: 5px;
+    border-radius: 25px ;
+}
+
+.alarm-display {
+    background-color: #425F57;
+    margin: 15px auto;
+    color: #DCD7C9;
+    padding: 5px;
+    text-align: center;
+    border-radius: 25px ;
+}
+
+.counters {
+    padding-top: 30px;
+}
+
+.sumit-button {
+    padding-top: 20px;
+}
+
+.btn-counter {
+    width: 1cm;
+    border-radius: 50%;
+}
+
+.is-disable {
+    display: none;
+}
+
+.input-format {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.is-error {
+    border: solid 5px #ff0000;
+}
+
+
+.input-format:focus {
+    background-color: #3F4E4F;
+    color: white;
+}
+
+.input-format::placeholder {
+    color: white;
+
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+#stopimg {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    
+}
+
+#stopButton {
+    width: 300px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

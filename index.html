@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm App</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="styles/index.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1> Alarm</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="div1 col-lg-5  text-center">
+                <div class="title  text-center">
+                    <h2>Start</h2>
+                </div>
+                <div class="row counters">
+                    <div class="col-lg-6   text-center">
+                        <button type="button" class="btn btn-secondary btn-counter" id="Starthouradd">+</button>
+                        <input type="number" class="form-control form-control-lg input-format" id="starthour"
+                            placeholder="00" max="23" min="0">
+                        <button type="button" class="btn btn-secondary btn-counter" id="Starthoursub">-</button>
+                    </div>
+                    <div class="col-lg-6  text-center">
+                        <button type="button" class="btn btn-secondary btn-counter" id="Startminadd">+</button>
+                        <input type="number" class="form-control form-control-lg input-format" id="Startmin"
+                            placeholder="00" max="59" min="0" step="5">
+                        <button type="button" class="btn btn-secondary btn-counter" id="Startminsub">-</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="div2 col-lg-5  ">
+                <div class="title   text-center">
+                    <h2>AlarmGoal</h2>
+                </div>
+
+                <div class="row counters">
+                    <div class="col-lg-6  text-center">
+                        <button type="button" class="btn btn-secondary btn-counter" id="Endhouradd">+</button>
+                        <input type="number" class="form-control form-control-lg input-format" id="Endhour"
+                            placeholder="00" max="23" min="0">
+                        <button type="button" class="btn btn-secondary btn-counter" id="Endhoursub">-</button>
+                    </div>
+                    <div class="col-lg-6  text-center">
+                        <button type="button" class="btn btn-secondary btn-counter" id="Endminadd">+</button>
+                        <input type="number" class="form-control form-control-lg input-format" id="Endmin"
+                            placeholder="00" max="59" min="0" step="5">
+                        <button type="button" class="btn btn-secondary btn-counter" id="Endminsub">-</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+                
+            <div class="col-lg-5 sumit-button text-center">
+                <div class="alarm-display text-center">
+                    <h2 id="alarmCreate">--:--</h2>
+                </div>
+                        <button type="button" class="btn btn-outline-info btn-lg" id="Setbutton">Set Alarm</button>
+                    </div>
+                
+                
+            <div class="col-lg-5 sumit-button text-center">
+                <div class="alarm-display  text-center">
+                    <h2 id="alarmStop">--:--</h2>
+                </div>
+                        <button type="button" class="btn btn-outline-info btn-lg" id="SetbuttonGoal">AlarmGoal</button>
+                    
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+        <h1 id="date-time"> 00:00:00</h1>
+        <div class="is-disable" id="stopimg">
+            
+            <!-- <button class="btn btn-warning text-center " >Stop</button> -->
+            <img class="is-disable" src="assets/giphy.gif" alt="stopAlarm" id="stopButton">
+        <div>
+
+</div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="index.js"></script>
+</body>
+
+</html>
